@@ -1,10 +1,18 @@
 package com.anand.shop.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Index;
+import javax.persistence.Table;
 
 @Entity // This tells Hibernate to make a table out of this class
-public class Category {
+@Table(name = "category",
+indexes = {@Index(name = "i_category",  columnList="category_name", unique = true)})
+public class Category {	
 	
+	@Id
+	@Column(name = "category_name", nullable = false)
 	private String category_name;
 	private String remarks;
 	
