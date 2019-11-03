@@ -17,11 +17,11 @@ indexes = {@Index(name = "i_item", columnList = "item_name")})
 public class Item {
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(unique = true)    
+    @JoinColumn(name="category_name",unique = true)    
 	private Category category_name;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(unique = true)   
+    @JoinColumn(name="sub_category_name", unique = true)   	
 	private SubCategory sub_category_name;
 	
 	@Id
@@ -29,11 +29,11 @@ public class Item {
 	private String item_name;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(unique = true)  
+    @JoinColumn(name = "quantity_name",unique = true)  
 	private Quantity quantity_name;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(unique = true) 
+    @JoinColumn(name = "supplier_name",unique = true) 
 	private Supplier supplier_name;
 	
 	private String remarks;

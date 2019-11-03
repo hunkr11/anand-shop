@@ -17,7 +17,7 @@ indexes = {@Index(name = "i_stock", columnList = "stock_name")})
 public class Stock {
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(unique = true)   
+    @JoinColumn(name = "item_name",unique = true)   
 	private Item item_name;
 	
 	@Id

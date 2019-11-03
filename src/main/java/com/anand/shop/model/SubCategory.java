@@ -19,7 +19,7 @@ public class SubCategory {
 	private String sub_category_name;
 	
 	@OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(unique = true)    
+	@JoinColumn(name = "category_name",unique = true)   
 	private Category category_name;
 	
 	private String remarks;
