@@ -1,4 +1,4 @@
-package com.anand.shop.anandshop;
+package com.anand.shop;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

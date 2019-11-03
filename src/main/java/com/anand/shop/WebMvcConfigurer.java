@@ -1,4 +1,4 @@
-package com.anand.shop.anandshop;
+package com.anand.shop;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
